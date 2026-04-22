@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://clr0wy3ofuxuq"]
+
+[ext_resource type="Texture2D" uid="uid://cwbbunj63er0c" path="res://assets/Mushroom without VFX/Mushroom-Idle.png" id="1_7jpkb"]
+[ext_resource type="Script" uid="uid://buq0gsnwakb48" path="res://scripts/first_enemy.gd" id="1_xxrdo"]
+[ext_resource type="PackedScene" uid="uid://cbs2fq0omuset" path="res://scenes/killzone.tscn" id="2_1ey7b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xxrdo"]
+atlas = ExtResource("1_7jpkb")
+region = Rect2(0, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_abb27"]
+atlas = ExtResource("1_7jpkb")
+region = Rect2(80, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wkjx"]
+atlas = ExtResource("1_7jpkb")
+region = Rect2(160, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pllg6"]
+atlas = ExtResource("1_7jpkb")
+region = Rect2(240, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lg8jb"]
+atlas = ExtResource("1_7jpkb")
+region = Rect2(320, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c04nt"]
+atlas = ExtResource("1_7jpkb")
+region = Rect2(400, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbe64"]
+atlas = ExtResource("1_7jpkb")
+region = Rect2(480, 0, 80, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jgwdp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xxrdo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_abb27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wkjx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pllg6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lg8jb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c04nt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbe64")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="GDScript" id="GDScript_1ey7b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4nimo"]
+size = Vector2(6, 10)
+
+[node name="mashroums" type="Node2D" unique_id=201036033]
+script = ExtResource("1_xxrdo")
+
+[node name="RayCastright" type="RayCast2D" parent="." unique_id=1303535897]
+position = Vector2(1, -5)
+target_position = Vector2(9, 0)
+
+[node name="RayCastleft" type="RayCast2D" parent="." unique_id=482601139]
+position = Vector2(1, -5)
+target_position = Vector2(-9, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1813143390]
+position = Vector2(1.5624993, -12.500001)
+scale = Vector2(0.3609375, 0.39062503)
+sprite_frames = SubResource("SpriteFrames_jgwdp")
+autoplay = "default"
+frame_progress = 0.04664503
+script = SubResource("GDScript_1ey7b")
+
+[node name="killzone" parent="." unique_id=1617148220 instance=ExtResource("2_1ey7b")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=1804672369]
+position = Vector2(1, -5)
+shape = SubResource("RectangleShape2D_4nimo")

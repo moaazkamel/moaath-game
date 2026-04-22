@@ -82,7 +82,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_urp6f"]
-radius = 5.0
+radius = 4.0
 height = 22.0
 
 [node name="Player" type="CharacterBody2D" unique_id=167717713]
@@ -91,8 +91,8 @@ script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=331188981]
 z_index = 5
-position = Vector2(4.999999, -28.25)
-scale = Vector2(0.7166667, 0.70625)
+position = Vector2(4.0000005, -28)
+scale = Vector2(0.6833334, 0.70625)
 sprite_frames = SubResource("SpriteFrames_ivps1")
 animation = &"idel"
 autoplay = "idel"
