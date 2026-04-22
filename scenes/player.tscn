@@ -82,19 +82,22 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_urp6f"]
-radius = 6.0
-height = 32.0
+radius = 5.0
+height = 22.0
 
 [node name="Player" type="CharacterBody2D" unique_id=167717713]
+collision_layer = 2
 script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=331188981]
-position = Vector2(5, -40)
+z_index = 5
+position = Vector2(4.999999, -28.25)
+scale = Vector2(0.7166667, 0.70625)
 sprite_frames = SubResource("SpriteFrames_ivps1")
 animation = &"idel"
 autoplay = "idel"
-frame_progress = 0.44160149
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1687962969]
-position = Vector2(0, -16)
+position = Vector2(0.99999976, -10.999998)
+scale = Vector2(1.0000001, 1.0000001)
 shape = SubResource("CapsuleShape2D_urp6f")
