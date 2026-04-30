@@ -1,18 +1,57 @@
-A game in which the player is in a cave in which the player tries to pass safely, collect kiwis, and reach the end point while avoiding falling into the holes and dying.
-Smooth player movement
+Cave game:
 
-Challenging platforms
+A simple yet challenging 2D platformer where the player navigates through a dangerous cave,collecting
+kiwis and avoiding deadly holes to reach the end.
 
-Collectible kiwi
+Gameplay:
 
-Simple and clean 2D pixel design
+Explore a cave filled with tricky platforms
+Collect all kiwis to maximize your score
+Avoid falling into holes
+Reach the end point safely
 
-Controls: Move Left: Arrow Left Move and A Right: Arrow Right and D Jump: Space
+Controls:
 
-Built with: Godot Engine (2D Game Engine)
+Move Left: A or ←
+Move Right: D or →
+Jump → Space
 
-Project Structure: player.tscn → Player character platform.tscn → Platforms kiwi.tscn → Collectible apples killzone.tscn → Dead zones (holes) Game.tscn → Main game scene
+Features:
 
-Future Improvements: Add sound effects and music Multiple levels Timer system Main menu and UI improvements
+Smooth and responsive player movement
+Challenging platform design
+Collectible items 
 
-Author: Moaaz kamel
+Built With:
+
+Godot Engine
+
+Project Structure:
+
+player.tscn → Player character
+platform.tscn → Platforms
+kiwi.tscn → Collectibles
+killzone.tscn → Death zones
+Game.tscn → Main scene
+
+Screenshots:
+
+
+<img width="1125" height="647" alt="Screenshot 2026-04-30 104043" src="https://github.com/user-attachments/assets/5a3e43af-79a1-449a-a9ac-f2ba2c9835ed" />
+
+
+Inspiration:
+
+This project was created as a practice in building 2D platformer mechanics using Godot.The goal
+was to focus on smooth movement, simple design, and core gameplay experience.
+
+Future Improvements:
+
+Add sound effects and background music
+Create multiple levels
+Add timer system
+Improve UI and main menu
+
+Author:
+
+Moaaz Kamel
