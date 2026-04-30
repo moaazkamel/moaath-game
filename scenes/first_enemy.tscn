@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://clr0wy3ofuxuq"]
 
-[ext_resource type="Texture2D" uid="uid://cwbbunj63er0c" path="res://assets/Mushroom without VFX/Mushroom-Idle.png" id="1_7jpkb"]
+[ext_resource type="Texture2D" uid="uid://cwbbunj63er0c" path="res://assets 1/Mushroom without VFX/Mushroom-Idle.png" id="1_7jpkb"]
 [ext_resource type="Script" uid="uid://buq0gsnwakb48" path="res://scripts/first_enemy.gd" id="1_xxrdo"]
 [ext_resource type="PackedScene" uid="uid://cbs2fq0omuset" path="res://scenes/killzone.tscn" id="2_1ey7b"]
 
@@ -78,8 +78,8 @@ position = Vector2(1, -5)
 target_position = Vector2(-9, 0)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1813143390]
-position = Vector2(1.5624993, -12.500001)
-scale = Vector2(0.3609375, 0.39062503)
+position = Vector2(1.5624993, -12.000001)
+scale = Vector2(0.3609375, 0.40625003)
 sprite_frames = SubResource("SpriteFrames_jgwdp")
 autoplay = "default"
 frame_progress = 0.04664503
